@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahmoud Bastouni — Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="container-fluid px-4">
+      <span class="nav-logo">MB.</span>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link-item">About</a></li>
+        <li><a href="#projects" class="nav-link-item">Projects</a></li>
+        <li><a href="#skills" class="nav-link-item">Skills</a></li>
+        <li><a href="#contact" class="nav-link-item">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-label" id="themeLabel">Light</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            AVAILABLE FOR INTERNSHIPS
+          </div>
+          <h1 class="hero-name reveal">Mahmoud<br/><span class="accent">Bastouni</span></h1>
+          <div class="hero-sub-line reveal">
+            <span class="typewriter-wrap"><span class="accent-teal typewriter" id="typewriter">Game Developer</span><span class="cursor-blink">|</span></span>
+            <span class="hero-divider">·</span>
+            <span>Junior II · <span class="accent-teal">Computer Science</span> · American University of Sharjah</span>
+          </div>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn-primary-custom">View Projects →</a>
+            <a href="#contact" class="btn-ghost-custom">Get in Touch</a>
+          </div>
+          <div class="hero-enrolled reveal">
+            <span class="enrolled-dot"></span>
+            Currently enrolled — Spring 2026
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-md-5">
+          <div class="about-avatar reveal">
+            <div class="avatar-ring"></div>
+            <img src="images\MahmoudPortrait.jpeg" alt="Mahmoud Bastouni" class="avatar-photo" />
+            <div class="avatar-badge">AUS · CS</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7">
+          <p class="section-tag reveal">— About Me</p>
+          <h2 class="section-title reveal">Passionate about building<br/><span class="accent">meaningful software.</span></h2>
+          <p class="about-text reveal">
+            I'm Mahmoud, a Computer Science student at the American University of Sharjah.
+            I enjoy building things — from games to web applications.
+            I started with a 2D game in my freshman year, and I've been building ever since.
+          </p>
+          <div class="about-stats reveal">
+            <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Years Coding</span></div>
+            <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num" data-target="2027">0</span><span class="stat-label">Expected Grad.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <p class="section-tag reveal">— Projects</p>
+      <h2 class="section-title reveal">Things I've <span class="accent">Built</span></h2>
+
+      <div class="row g-4 mt-3">
+        <div class="col-12 col-md-6 reveal">
+          <div class="project-card">
+            <div class="card-number">01</div>
+            <div class="card-header-row">
+              <div class="card-tag">Unity · C#</div>
+              <div class="card-icon">🎮</div>
+            </div>
+            <h3 class="card-title">2D Video Game</h3>
+            <p class="card-desc">A fully playable 2D game developed using Unity during my freshman year. Features custom mechanics, sprites, and level design.</p>
+            <div class="card-footer">
+              <a href="https://github.com/MahmoudBastouni/Game-Portfolio" target="_blank" class="card-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Repo
+              </a>
+              <span class="card-year">Freshman Year</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 reveal">
+          <div class="project-card card-inprogress">
+            <div class="card-number">02</div>
+            <div class="card-header-row">
+              <div class="card-tag">Java · MySQL · HTML/CSS</div>
+              <div class="card-icon">🚗</div>
+            </div>
+            <h3 class="card-title">Mobile Car Wash Booking</h3>
+            <p class="card-desc">A responsive web application for booking mobile car wash, detailing, and ceramic coating services. Users select packages with different product quality levels, choose vehicle type and time slot, and submit booking requests. Admin manages packages, pricing, and booking statuses via Java server-side logic with MySQL database for CRUD operations and booking reports.</p>
+            <div class="card-footer">
+              <span class="card-link in-progress">
+                <span class="progress-dot"></span>
+                In Progress — Frontend Complete
+              </span>
+              <span class="card-year">Junior II</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <p class="section-tag reveal">— Skills</p>
+      <h2 class="section-title reveal">My <span class="accent">Tech Stack</span></h2>
+
+      <div class="skills-table-wrapper reveal">
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Technologies</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cat-label"><span class="cat-icon">⌨</span> Languages</td>
+              <td>
+                <div class="pill-group">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">C++</span>
+                  <span class="skill-pill">C#</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">HTML/CSS</span>
+                </div>
+              </td>
+              <td><div class="proficiency-bar"><div class="proficiency-fill" style="--w:82%"></div></div></td>
+            </tr>
+            <tr>
+              <td class="cat-label"><span class="cat-icon">🛠</span> Tools</td>
+              <td>
+                <div class="pill-group">
+                  <span class="skill-pill">Unity</span>
+                  <span class="skill-pill">GitHub</span>
+                  <span class="skill-pill">VS Code</span>
+                </div>
+              </td>
+              <td><div class="proficiency-bar"><div class="proficiency-fill" style="--w:75%"></div></div></td>
+            </tr>
+            <tr>
+              <td class="cat-label"><span class="cat-icon">◈</span> Concepts</td>
+              <td>
+                <div class="pill-group">
+                  <span class="skill-pill">Data Structures</span>
+                  <span class="skill-pill">Algorithms</span>
+                  <span class="skill-pill">OOP</span>
+                  <span class="skill-pill">Game Design</span>
+                </div>
+              </td>
+              <td><div class="proficiency-bar"><div class="proficiency-fill" style="--w:70%"></div></div></td>
+            </tr>
+            <tr>
+              <td class="cat-label"><span class="cat-icon">⬡</span> Frameworks</td>
+              <td>
+                <div class="pill-group">
+                  <span class="skill-pill">Bootstrap</span>
+                </div>
+              </td>
+              <td><div class="proficiency-bar"><div class="proficiency-fill" style="--w:60%"></div></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="section-tag reveal">03 — Contact</p>
+          <h2 class="section-title reveal">Let's <span class="accent">Connect</span></h2>
+        </div>
+      </div>
+      <div class="row g-5 mt-1">
+        <div class="col-12 col-md-5 reveal">
+          <p class="contact-sub">I'm open to internship opportunities, collaborative projects, and conversations about technology. Don't hesitate to reach out.</p>
+
+          <div class="contact-links">
+            <a href="mailto:mbastouni211205@gmail.com" class="contact-card" id="emailCard">
+              <div class="contact-icon-wrap">@</div>
+              <div class="contact-info">
+                <span class="contact-type">EMAIL</span>
+                <span class="contact-val">mbastouni211205@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/MahmoudBastouni" target="_blank" class="contact-card">
+              <div class="contact-icon-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-type">GITHUB</span>
+                <span class="contact-val">github.com/MahmoudBastouni</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/mahmoud-bastouni/" target="_blank" class="contact-card">
+              <div class="contact-icon-wrap">in</div>
+              <div class="contact-info">
+                <span class="contact-type">LINKEDIN</span>
+                <span class="contact-val">linkedin.com/in/mahmoudbastouni</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7 reveal">
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <label class="form-label">YOUR NAME</label>
+              <input type="text" class="form-input" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">EMAIL ADDRESS</label>
+              <input type="email" class="form-input" placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">MESSAGE</label>
+              <textarea class="form-input form-textarea" placeholder="Hey Mahmoud, I'd like to..."></textarea>
+            </div>
+            <button class="btn-send" id="sendBtn">SEND MESSAGE →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-toast" id="copyToast">📋 Email copied!</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <span class="footer-name">Mahmoud Bastouni</span>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <span class="footer-copy">© 2026 · American University of Sharjah</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
